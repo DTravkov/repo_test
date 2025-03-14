@@ -1,5 +1,12 @@
 import pygame,datetime
 from classes import TimeClock
+
+
+# This project uses relative paths for accessing images,make sure that you download this folder
+#(where file is located) and opened it in VSCode,before running the main.py
+
+
+
 pygame.init()
 res = (600,600)
 screen = pygame.display.set_mode(res)
