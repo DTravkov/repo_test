@@ -1,5 +1,11 @@
 import pygame,random
 from sound_player import sound_player as player
+
+
+# This project uses relative paths for accessing images,make sure that you download this folder separately
+#(where file is located) and open it in VSCode,before running the main.py
+
+
 pygame.init()
 res = (600,600)
 screen = pygame.display.set_mode(res)
