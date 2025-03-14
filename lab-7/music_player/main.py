@@ -2,7 +2,7 @@ import pygame,random
 from sound_player import sound_player as player
 
 
-# This project uses relative paths for accessing images,make sure that you download this folder separately
+# This project uses relative paths for accessing sounds,make sure that you download this folder separately
 #(where file is located) and open it in VSCode,before running the main.py
 
 
