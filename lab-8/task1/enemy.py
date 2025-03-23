@@ -2,9 +2,9 @@ import pygame,random
 from clamp import clamp
 class Enemy:
     def __init__(self,screen:pygame.Surface):
-        self.x = random.choice(list([x for x in range(90,screen.get_width()-90) if x % 10 == 0])) # picks random spawnm coordinate
+        self.x = random.choice(list([x for x in range(65,screen.get_width()-65) if x % 10 == 0])) # picks random spawnm coordinate
         self.y = 0
-        self.speed = random.randint(9,16) # sets random speed to each car
+        self.speed = random.randint(9,14) # sets random speed to each car
         self.imagepath = 'car_red.png' 
         self.image =  pygame.image.load(self.imagepath)
         self.image = pygame.transform.scale(self.image,((screen.get_width() // 8), (screen.get_height()//6))).convert_alpha() # scales and renders png  
