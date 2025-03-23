@@ -24,7 +24,7 @@ clock = pygame.time.Clock()
 player = Player(1,1.3,screen)
 enemylist = []
 coinlist = []
-timer_interval = 400 
+timer_interval = 510 
 timer_event = pygame.USEREVENT + 1
 pygame.time.set_timer(timer_event , timer_interval)
 font = pygame.font.SysFont(None,48)
