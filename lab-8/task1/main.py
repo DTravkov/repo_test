@@ -7,7 +7,6 @@ from handle_input import handle_input
 from coin import Coin
 
 
-
 # 
 # 
 # This project uses relative paths.Make sure to download the folder with this game and open it in VSCode before running it,because otherwise sprites used in the game may not be found by pygame.

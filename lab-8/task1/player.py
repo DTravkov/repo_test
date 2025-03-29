@@ -10,7 +10,7 @@ class Player:
         self.score = 0
         self.speed = speed
         self.imagepath = 'motorcycle.png'
-        self.image = None
+        self.image =  pygame.image.load(self.imagepath)
         self.rotation = 0 # rotation in degrees
         self.rect = pygame.Rect(-1000,-1000,0,0)
         self.mask = None
@@ -22,15 +22,15 @@ class Player:
     
     
     def update(self,screen:pygame.surface.Surface):
-        self.image =  pygame.image.load(self.imagepath)
-        self.image = pygame.transform.scale(self.image,((screen.get_width() // 8), (screen.get_height()//6)))
-        self.image = pygame.transform.rotozoom(self.image,self.rotation,0.7) # rotates image,and scales it by 0.7 factor
-        prect = self.image.get_rect()
+        copy = pygame.transform.scale(self.image,((screen.get_width() // 8), (screen.get_height()//6)))
+        copy = pygame.transform.rotozoom(copy,self.rotation,1) # rotates image,and scales it by 0.7 factor
+        prect = copy.get_rect()
         prect.center = (screen.get_width()//2,screen.get_height()//1.35)
         prect.x += self.x * self.speed
         self.rect = prect
         self.mask = pygame.mask.from_surface(self.image) # takes mask for pixelperfect collision
-        screen.blit(self.image,prect)
+        self.rect = prect
+        screen.blit(copy,prect)
 
 
 
