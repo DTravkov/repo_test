@@ -1,0 +1,1 @@
+don't forget to download posgresql on the laptop, and create database named 'snake'.Username for db - postgres, password 5427 (if another password wasn't chosen in the process of software installation)
